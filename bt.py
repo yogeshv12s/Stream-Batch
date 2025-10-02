@@ -4,7 +4,6 @@ import sqlite3
 import threading
 import uuid
 from urllib.parse import urlparse
-
 from flask import Flask, render_template_string
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
@@ -169,4 +168,5 @@ def add_file(client, message):
 if __name__ == "__main__":
     threading.Thread(target=run_flask).start()
     app_bot.run()
+
 
