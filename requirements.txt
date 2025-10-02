@@ -1,0 +1,4 @@
+flask==2.3.5
+pyrogram==2.0.42
+tgcrypto==1.4.0
+python-dotenv==1.0.0
