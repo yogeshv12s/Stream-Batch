@@ -193,7 +193,7 @@ def button_handler(client, callback_query):
             json.dump(json_data, f, indent=4)
 
         user_batches[user_id] = {}
-        batch_url = f"http://10.32.37.139:8000/batch/{batch_id}"
+        batch_url = f"http://effective-snake-test12s-2aeac175.koyeb.app/batch/{batch_id}"
         keyboard = InlineKeyboardMarkup([
             [InlineKeyboardButton("🌐 Open Batch", url=batch_url)]
         ])
@@ -227,3 +227,4 @@ def add_file(client, message):
 if __name__ == "__main__":
     threading.Thread(target=run_flask).start()
     app_bot.run()
+
