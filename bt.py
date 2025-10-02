@@ -116,7 +116,6 @@ h1 {
     <!-- Logo -->
     <img src="https://chadstreamz.sbs/assets/images/log2.png" alt="Logo" class="logo">
     <!-- Page Title -->
-    <h1>Batch Files</h1>
 
     <!-- File Cards -->
     {% for link, filename in files.items() %}
@@ -227,4 +226,5 @@ def add_file(client, message):
 if __name__ == "__main__":
     threading.Thread(target=run_flask).start()
     app_bot.run()
+
 
